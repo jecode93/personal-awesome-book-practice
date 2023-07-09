@@ -72,6 +72,11 @@ a{
   text-align: center;
 }
 
+#add-book,
+#contact {
+  display: none;
+}
+
 footer {
   text-align: center;
   border: 1px solid #000;
