@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Single Page Application</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="container">
+  <h1><a href="#">Awesome books</a></h1>
+  <nav class="navbar">
+    <ul>
+			<li class="nav-item" id="list"><a href='#'>List</a></li>
+			<li class="nav-item" id="add"><a href='#'>Add Book</a></li>
+			<li class="nav-item" id="contact-link"><a href='#'>Contact</a></li>
+		</ul>
+  </nav>
+</header>
+
+<section id="books" class="container"></section>
+<section id="add-book" >
+  <h2 class="add-new-text">Add new book</h2>
+  <form id="form" class="add-book flex">
+    <input type="text" name="title" id="title" placeholder="Title" required>
+    <input type="text" name="author" id="author" placeholder="Author" required>
+    <button type="submit">Add book</button>
+    <p class="error"></p>
+  </form>
+</section>
+<section id="contact" class="contact container flex">
+  <h2>Contact informations</h2>
+  <p>Here is our personal contact, if you want to join us!</p>
+  <a href="tel:+509 4780-1268">(+509) 4780-1268</a>
+  <a href="tel:+267 529-6040">(+267) 529-6040</a>
+</section>
+
+<footer>
+  <i>&copy copyright Juillet 2023 <strong>Jean Emmanuel Cadet</strong> | All right reserved</i>
+</footer>
+	<script src="js/index.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>
