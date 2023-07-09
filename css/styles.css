@@ -1,0 +1,84 @@
+.container {
+  margin: 0 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin: 0 0.7rem;
+}
+
+input{
+  display: block;
+  margin: 1rem 0;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+  margin-right: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.error{
+  color: red;
+  font-style: italic;
+}
+
+.bg-gray {
+  background-color: gray;
+}
+
+.book-element {
+  padding: 0.5rem;
+}
+
+.book-element {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-article {
+  align-items: center;
+}
+
+.div-article span {
+  margin: 0 0.7rem;
+}
+
+#books p {
+  text-align: center;
+}
+
+.add-book,
+.contact {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-text {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  padding: 1rem;
+  margin: 0 2rem;
+}

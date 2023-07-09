@@ -8,17 +8,25 @@ const bookElement = document.querySelectorAll('.book-element');
 const bookStorage = JSON.parse(localStorage.getItem('books')) || [];
 
 function showData(){
+
+  if(bookStorage.length === 0) {
+    booksSection.innerHTML = '<p> No data in the table';
+    booksSection.style.border = 'none';
+  } else {
     booksSection.innerHTML = '';
     bookStorage.forEach((book, index) => {
+    booksSection.style.border = '2px solid #000'
     booksSection.innerHTML += `
     <div>
       <div class='data-container'>
-        <article class='book-element'>
-          <p class='title'>${book.title}</p>
-          <p class='author'>${book.author}</p>
+        <article class='book-element flex'>
+          <div class='div-article flex'>
+            <p class='title'>"${book.title}"</p>
+            <span> by </span>
+            <p class='author'>${book.author}</p>
+          </div>
           <button class='remove-btn' onclick='remove(${index})'>Remove</button>
         </article>
-        <hr>
       </div>
     </div>
 `;
@@ -28,6 +36,7 @@ function showData(){
       booksSection.lastElementChild.style.backgroundColor = '#fff';
     }
 	});
+	}
 }
 
 
